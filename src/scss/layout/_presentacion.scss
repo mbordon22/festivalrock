@@ -1,0 +1,27 @@
+.contenido-presentacion {
+    padding: $separacion 0;
+
+    @include tablet{
+        @include grid(2, $separacion);
+    }
+}
+
+.presentacion-info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .info{
+        color: $rosa;
+        font-weight: $bold;
+    }
+
+    .texto{
+        line-height: 1.5;
+    }
+}
